@@ -17,9 +17,16 @@ let start = (_evt) => {
     yes = document.getElementById("btn-yes")
     no = document.getElementById("btn-no")
     why = document.getElementById("btn-why")
+    sign = document.getElementById("btn-sign")
+    about = document.getElementById("btn-about")
 
     question = document.getElementById('question')
     text = document.getElementById('text')
+
+    document.body.classList.add("experience")
+    document.getElementById("header").classList.add("header-experience")
+    document.getElementById("footer").classList.add("footer-experience")
+    document.getElementById("headline").style.display = "none"
 
     yes.style.display = "block"
     no.style.display = "block"
@@ -50,7 +57,7 @@ let agree = () => {
         case 2:
             showButtons(true)
             question.innerText = "In accordance with the recent measures (Berlin Sicherheitsgestetz §11.9, §11.10, §12.1), we would like to request your cooperation with ensuring the safety of all passengers."
-            text.innerText = "Please enable your microphone throughout the duration of your travel. This page will remain open in the background and you can go back to browsing your usual content."
+            text.innerHTML = "Please enable your microphone throughout the duration of your travel. This page will remain open in the background and you can go back to browsing your usual content."
 
             break;
 
@@ -133,7 +140,7 @@ let deny = () => {
             setTimeout(agree, skipDuration)
             break;
         case 6:
-            question.innerText = "You have reached the end of the registration process!\n\nUnfortunately, our restults indicate we cannot assist you further."
+            question.innerText = "You have reached the end of the registration process!\n\nUnfortunately, our results indicate we cannot assist you further."
             text.innerText = ""
             yes.style.display = "none"
             no.style.display = "none"
@@ -146,17 +153,19 @@ let deny = () => {
 }
 
 let explain = () => {
-    document.querySelector('main').style.backgroundColor = "transparent"
+    
     question.innerText = "Does that seem unfair and intrusive?\n\nThese kinds of technologies might end up becoming reality."
-    text.innerText = "Face recognition, voice recognition and contact pruning are used extensively at the European Union border. Some of the companies selling these technologies want to have them implemented in places like metro stations as well."
+    text.innerText = "Face recognition, voice recognition and contact pruning are used extensively at the European Union border.\n\nSome of the companies selling these technologies want to have them implemented in places like metro stations as well."
     why.innerText = "What can I do?"
     why.onclick = act
 }
 
 let act = () => {
-    question.innerText = "One framework for regulating these uses is the EU AI Act. It is currently being discussed at the EU Parliament."
-    text.innerText = "Contact your MP to let them know that AI surveillance technologies shouldn't be allowed."
+    question.innerText = "One of the initiatives helping us is Reclaim Your Face."
+    text.innerText = "Facial Recognition can and will be used to dynamically restric liberties by governments and corporations—based exclusively on what we look like."
     why.style.display = "none"
+    sign.style.display = "block"
+    about.style.display = "block"
 }
 
 let showButtons = (_show) => {

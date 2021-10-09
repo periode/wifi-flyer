@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Suisse';
+    src: url('suisse.otf');
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    margin: auto;
+    font-family: 'Suisse', sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+    body{
+        width: 100%;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 2rem;
+}
+
+header, main, footer{
+    color: #3001bf;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 50vh;
+    transition: background-color 1s linear;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #3001bf;
+    padding: 5px;
+}
+
+footer div{
+    width: 40%;
+}
+
+.button{
+    display: block;
+    align-self: flex-end;
+    border: none;
+    background-color: #3001bf;
+    color: white;
+    padding: 10px;
+    font-size: 1.4em;
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.yes, .no, .why{
+    margin: unset;
+    width: 35%;
+    text-align: center;
+}
+
+.answers{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.question, .text, .headline {
+    margin: auto;
+}
+
+.headline{
+    
+    font-weight: bold;
+}
+
+.question, .text{
+    width: 50%;
+    text-align: center;
+}
+
+.question{
+    font-size: 1.4rem;
+}
+
+.text{
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.experience{
+    padding-bottom: 5rem;
+}
+
+.experience, .footer-experience, .header-experience{
+    background-color: #3001bf;
+    color: white;
+}
+
+.footer-experience{
+    padding-top: 1rem;
+    border-color: white;
+}
+
+.experience .question, .experience .text{
+    color: white;
+}
+
+.experience .button {
+    background-color: white;
+    color: #3001bf;
+}

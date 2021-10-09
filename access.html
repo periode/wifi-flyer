@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Flyer</title>
+    <link rel="stylesheet" href="access.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1>argus</h1>
+
+        <div>free - fast - access</div>
+    </header>
+
+    <main id="main">
+        <h1 class="headline" id="headline">Welcome</h1>
+
+        <div class="intro">
+            <div class="question" id="question">Looks like you want to get access to our fast and secure WiFi—we'll need some information about you first.</div>
+
+            <div class="text" id="text">
+                <!-- We just need a couple of information from you in order to register you with our Affiliates program. -->
+            </div>
+        </div>
+
+        <button class="button" onclick="start(event)" id="btn-start">Let's go!</button>
+
+        <div class="answers">
+            <button class="button yes" style="display: none" onclick="agree()" id="btn-yes">Yes</button>
+            <button class="button no" style="display: none" onclick="deny()" id="btn-no">No</button>
+            <button class="button why" style="display: none" onclick="explain()" id="btn-why">Get me out</button>
+            <button class="button" style="display:none" id="btn-sign"><a href="http://reclaimyourface.eu" target="_blank" rel="noopener noreferrer">Sign Now</a></button>
+            <button class="button" style="display:none" id="btn-about"><a href="about.html">What is this?</a></button>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div>
+            Copyright argus 2021 - All Rights reserved
+        </div>
+        <div>
+            <ul>
+                <li>Datenschutz</li>
+                <li>AGB</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>

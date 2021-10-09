@@ -4,6 +4,7 @@ body{
     width: 30%;
     margin: auto;
     font-family: sans-serif;
+    color: white;
 }
 
 @media screen and (max-width: 992px) {
@@ -23,7 +24,7 @@ header{
 }
 
 header, main{
-    background-color: #F0CA00;
+    background-color: #3001bf;
 }
 
 main{
@@ -45,12 +46,16 @@ footer{
     margin-top: 2rem;
 }
 
+button{
+    
+}
+
 .button{
     display: block;
     align-self: flex-end;
     border: none;
     background-color: black;
-    color:#F0CA00;
+    color: white;
     padding: 10px;
     font-size: 1.4em;
     margin: auto;
