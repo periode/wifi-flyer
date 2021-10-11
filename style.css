@@ -1,95 +1,48 @@
+@font-face {
+    font-family: 'Suisse';
+    src: url('suisse.otf');
+}
+
+
 body{
     margin: 0;
     padding: 0;
-    width: 30%;
+    width: 100%;
     margin: auto;
-    font-family: sans-serif;
+    font-family: 'Suisse', sans-serif;
+    background-color: #3001bf;
     color: white;
-}
-
-@media screen and (max-width: 992px) {
-    body{
-        width: 100%;
-    }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-    padding: 5px;
-    padding-bottom: 20px;
-    margin-bottom: 2rem;
-}
-
-header, main{
-    background-color: #3001bf;
-}
-
-main{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    min-height: 50vh;
-    transition: background-color 1s linear;
-}
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid black;
-    padding: 5px;
-    padding-top: 10px;
-    margin-top: 2rem;
-}
-
-button{
-    
-}
-
-.button{
-    display: block;
-    align-self: flex-end;
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-size: 1.4em;
-    margin: auto;
-    cursor: pointer;
-    border-radius: 10px;
-    
-}
-
-.yes, .no, .why{
-    margin: unset;
-    width: 25%;
-    text-align: center;
-}
-
-.answers{
     width: 100%;
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.intro{
-    margin-top: 50px;
-    margin-bottom: 50px
+header a {
+    color: white;
+    text-decoration: none;
 }
 
-.question, .text, .headline {
-    margin: 1rem;
+.logo{
+    height: 90vh;
+    display: flex;
 }
 
-.question{
-    font-weight: bold;
-    font-size: 1.4rem;
+.logo-holder{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.text{
-    font-style: italic;
+.logo img, .logo-holder div{
+    margin: auto;
 }
