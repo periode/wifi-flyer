@@ -26,4 +26,8 @@ You will need:
 
 Use the Raspberry Pi Imager to flash the Smart Border image. First, unzip the `smartborder.zip` file you just downloaded. Second, open the Raspberry Pi Imager, click on `Choose OS`, select `Use Custom...`, and select the `.img` file you just downloaded. Third, select the SD Card you've just inserted into your computer, and finally, click `Write`.
 
-Once the writing process is done, you can insert the SD card into your Pi, connect it to power, and test your Smart Border WiFi network!
+Once the writing process is done, you can insert the SD card into your Pi, connect it to power, and test your Smart Border WiFi network! Open your WiFi manager on another device (laptop, smartphone), select the "Fast Free Wifi" network and the captive portal should show up.
+
+## FAQ
+
+If you're encountering any issues, you can open a [pull request](https://github.com/periode/wifi-flyer/pulls) or [email us](mailto:pierre.depaz@gmail.com) directly!
